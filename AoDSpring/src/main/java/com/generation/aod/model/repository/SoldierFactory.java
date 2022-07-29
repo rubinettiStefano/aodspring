@@ -17,6 +17,9 @@ public class SoldierFactory
 	@Autowired
 	ProfessionRepository professionRepository;
 	
+	
+	
+	
 	public SoldierFactory() {}
 	
 	// soldato comune

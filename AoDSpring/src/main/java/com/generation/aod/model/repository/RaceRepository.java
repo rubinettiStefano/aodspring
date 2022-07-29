@@ -1,6 +1,7 @@
 package com.generation.aod.model.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -14,4 +15,6 @@ public interface RaceRepository extends JpaRepository<Race,Integer>
 		
 		return races.get((int)(Math.random()*races.size()));
 	}
+	
+	Optional<Race> findByName(String name);
 }
